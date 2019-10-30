@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+<form class="container">
+    <div class="form-group">
+        <label for="Account" class="col-md-3">帳號:</label>
+        <div class="col-md-9">
+            <input id="Account" name="Account" type="text" class="form-control" />
+        </div>
+    </div>
+
+    <div class="form-group mt-auto">
+        <label for="Password" class="col-md-3">密碼:</label>
+        <div class="col-md-9">
+            <input id="Password" name="Password" type="text" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group mt-5">
+        <input id="Button1" type="button" value="Google Login" class="btn btn-danger btn-lg position-absolute" />
+    </div>
+    <div class="form-group mt-5">
+        <input id="Button1" type="button" value="Facebook Login" class="btn btn-primary btn-lg position-absolute" />
+
+    </div>
+    <div class="form-group mt-5">
+        <input id="Button1" type="button" value="Register" class="btn btn-info btn-lg position-absolute" />
+
+    </div>
+    <div class="form-group mt-5">
+        <input id="Button1" type="button" value="匿名瀏覽" class="btn btn-secondary btn-lg position-absolute" />
+
+    </div>
+    <div class="form-group mt-5">
+        <input id="Button1" type="button" value="忘記密碼" class="btn btn-warning btn-lg position-absolute" />
+    </div>
+
+
+
+</form>
+<h3 class="text-danger">@ViewBag.LoginErr</h3>
